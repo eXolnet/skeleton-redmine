@@ -13,4 +13,4 @@ Redmine::Plugin.register ::plugin_identifier do
   requires_redmine :version_or_higher => '4.2'
 end
 
-require ':plugin_identifier'
+require File.dirname(__FILE__) + '/lib/:plugin_identifier'
