@@ -1,0 +1,26 @@
+name: tests
+
+on: [push, pull_request]
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: true
+      matrix:
+        redmine: ["4.2", "5.0"]
+        db: ["sqlite", "mysql", "postgresql"]
+        include:
+          - ruby: "2.7"
+
+    name: "Ruby ${{ matrix.ruby }} / Redmine ${{ matrix.redmine }} / ${{ matrix.db }}"
+
+    steps:
+      - name: Execute tests
+        uses: eXolnet/action-redmine-plugin@v1
+        with:
+          plugin_name: ":plugin_identifier"
+          redmine_version: "${{ matrix.redmine }}"
+          ruby_version: "${{ matrix.ruby }}"
+          database: "${{ matrix.db }}"
