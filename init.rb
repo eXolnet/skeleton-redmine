@@ -10,7 +10,7 @@ Redmine::Plugin.register ::plugin_identifier do
   url 'https://github.com/eXolnet/:plugin_identifier'
   author_url 'https://www.exolnet.com'
 
-  requires_redmine :version_or_higher => '3.4'
+  requires_redmine :version_or_higher => '4.2'
 end
 
 require ':plugin_identifier'
