@@ -2,7 +2,7 @@
 
 [![Latest Release](https://img.shields.io/github/release/eXolnet/:plugin_identifier.svg?style=flat-square)](https://github.com/eXolnet/:plugin_identifier/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-8469ad.svg?style=flat-square)](LICENSE)
-[![Build Status](https://img.shields.io/travis/eXolnet/:plugin_identifier/master.svg?style=flat-square)](https://travis-ci.org/eXolnet/:plugin_identifier)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/eXolnet/:plugin_identifier/tests.yml?label=tests&style=flat-square)](https://github.com/eXolnet/:plugin_identifier/actions?query=workflow%3Atests)
 [![Maintainability](https://api.codeclimate.com/v1/badges/:codeclimate_id/maintainability)](https://codeclimate.com/github/eXolnet/:plugin_identifier/maintainability)
 
 :plugin_description
